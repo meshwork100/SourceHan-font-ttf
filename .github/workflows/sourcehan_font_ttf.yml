@@ -42,7 +42,7 @@ jobs:
           # 获取版本
           version="$(curl --silent "https://api.github.com/repos/adobe-fonts/source-han-serif/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')"
           mkdir font
-          mv OTF/*.ttf font
+          mv OTF/*/*.ttf font
           # 压缩
           cd font
           zip -9 -r -UN=UTF8 ../SourceHanSerif_TTF_$version.zip *.ttf
@@ -59,7 +59,7 @@ jobs:
           # 获取版本
           version="$(curl --silent "https://api.github.com/repos/adobe-fonts/source-han-sans/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')"
           mkdir font
-          mv OTF/*.ttf font
+          mv OTF/*/*.ttf font
           # 压缩
           cd font
           zip -9 -r -UN=UTF8 ../SourceHanSans_TTF_$version.zip *.ttf
