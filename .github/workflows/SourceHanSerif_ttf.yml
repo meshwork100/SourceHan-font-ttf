@@ -65,5 +65,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "*.zip"
-          tag: ${{ env.DATE }}
+          tag: SourceHanSans_TTF_${{ env.DATE }}
           token: ${{ secrets.GITHUB_TOKEN }}
