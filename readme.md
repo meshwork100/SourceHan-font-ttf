@@ -11,4 +11,4 @@
 - 因为`otf2ttf`转换缓慢, github actions 转换一个otf文件大概需要3-5分钟
 
 ## 开源协议
-- 本项目采用[MIT协议](/raw/main/LICENSE)
+- 本项目采用[MIT协议](/LICENSE)
